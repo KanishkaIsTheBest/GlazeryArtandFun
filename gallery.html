@@ -1,0 +1,1116 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Community Gallery - The Glazery</title>
+    <meta
+      name="description"
+      content="See amazing pottery creations from our community and share your own artwork at The Glazery."
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="gallery.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="light-theme">
+    <!-- Header -->
+    <header class="header">
+      <div class="container">
+        <div class="header-content">
+          <a href="index.html" class="logo">
+            <div class="logo-icon">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <circle cx="13.5" cy="6.5" r=".5" fill="currentColor" />
+                <circle cx="17.5" cy="10.5" r=".5" fill="currentColor" />
+                <circle cx="8.5" cy="7.5" r=".5" fill="currentColor" />
+                <circle cx="6.5" cy="12.5" r=".5" fill="currentColor" />
+                <path
+                  d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.554C21.965 6.012 17.461 2 12 2z"
+                />
+              </svg>
+            </div>
+            <div class="logo-text">
+              <h1>The Glazery</h1>
+              <p>Art & Fun</p>
+            </div>
+          </a>
+          <nav class="nav">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="booking.html" class="nav-link">Book Now</a>
+            <a href="services.html" class="nav-link">Services</a>
+            <a href="gallery.html" class="nav-link active">Gallery</a>
+            <a href="contact.html" class="nav-link">Contact</a>
+            <button class="theme-toggle" onclick="toggleTheme()">
+              <svg
+                class="moon-icon"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z" />
+              </svg>
+              <svg
+                class="sun-icon"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                style="display: none"
+              >
+                <circle cx="12" cy="12" r="4" />
+                <path d="m12 1 0 2" />
+                <path d="m12 21 0 2" />
+                <path d="m4.22 4.22 1.42 1.42" />
+                <path d="m18.36 18.36 1.42 1.42" />
+                <path d="m1 12 2 0" />
+                <path d="m21 12 2 0" />
+                <path d="m4.22 19.78 1.42-1.42" />
+                <path d="m18.36 5.64 1.42-1.42" />
+              </svg>
+            </button>
+          </nav>
+          <div class="header-actions">
+            <button class="mobile-theme-toggle" onclick="toggleTheme()">
+              <svg
+                class="moon-icon"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z" />
+              </svg>
+              <svg
+                class="sun-icon"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                style="display: none"
+              >
+                <circle cx="12" cy="12" r="4" />
+                <path d="m12 1 0 2" />
+                <path d="m12 21 0 2" />
+                <path d="m4.22 4.22 1.42 1.42" />
+                <path d="m18.36 18.36 1.42 1.42" />
+                <path d="m1 12 2 0" />
+                <path d="m21 12 2 0" />
+                <path d="m4.22 19.78 1.42-1.42" />
+                <path d="m18.36 5.64 1.42-1.42" />
+              </svg>
+            </button>
+            <button class="btn btn-primary" onclick="showUploadModal()">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                <polyline points="7,10 12,15 17,10" />
+                <line x1="12" y1="15" x2="12" y2="3" />
+              </svg>
+              Share Your Art
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="gallery-main">
+      <div class="container">
+        <!-- Gallery Header -->
+        <div class="gallery-header">
+          <h1>Community Gallery</h1>
+          <p>
+            Discover the amazing pottery creations from our studio community.
+            Every piece tells a unique story of creativity and joy!
+          </p>
+        </div>
+
+        <!-- Gallery Controls -->
+        <div class="gallery-controls">
+          <div class="search-container">
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <circle cx="11" cy="11" r="8" />
+              <path d="m21 21-4.35-4.35" />
+            </svg>
+            <input
+              type="text"
+              placeholder="Search by artist, title, or description..."
+              class="search-input"
+              onkeyup="handleSearch(this.value)"
+            />
+          </div>
+
+          <div class="gallery-filters">
+            <button
+              class="filter-button active"
+              data-filter="all"
+              onclick="filterGallery('all')"
+            >
+              All Creations
+            </button>
+            <button
+              class="filter-button"
+              data-filter="pottery"
+              onclick="filterGallery('pottery')"
+            >
+              Pottery Painting
+            </button>
+            <button
+              class="filter-button"
+              data-filter="workshop"
+              onclick="filterGallery('workshop')"
+            >
+              Workshop Projects
+            </button>
+            <button
+              class="filter-button"
+              data-filter="family"
+              onclick="filterGallery('family')"
+            >
+              Family Creations
+            </button>
+            <button
+              class="filter-button"
+              data-filter="party"
+              onclick="filterGallery('party')"
+            >
+              Party Projects
+            </button>
+            <button
+              class="filter-button"
+              data-filter="kids"
+              onclick="filterGallery('kids')"
+            >
+              Kids Art
+            </button>
+          </div>
+
+          <div class="sort-options">
+            <label for="sort-select">Sort by:</label>
+            <select id="sort-select" onchange="sortGallery(this.value)">
+              <option value="recent">Most Recent</option>
+              <option value="popular">Most Popular</option>
+              <option value="artist">Artist Name</option>
+              <option value="title">Title A-Z</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Gallery Grid -->
+        <div class="gallery-section">
+          <div class="gallery-grid" id="gallery-grid">
+            <!-- Default gallery items - will be enhanced by JavaScript -->
+            <div class="gallery-item" data-item-id="1">
+              <div class="gallery-image-container">
+                <img
+                  src="https://images.pexels.com/photos/4241347/pexels-photo-4241347.jpeg"
+                  alt="Family Bowl Creation"
+                  class="gallery-image"
+                  loading="lazy"
+                />
+                <div class="gallery-overlay">
+                  <div>
+                    <h3>Family Bowl Creation</h3>
+                    <p>by Sarah & Emma Johnson</p>
+                  </div>
+                </div>
+              </div>
+              <div class="gallery-content">
+                <span class="gallery-category">Family Project</span>
+                <h3 class="gallery-title">Family Bowl Creation</h3>
+                <div class="gallery-artist">
+                  <span class="artist-avatar">SE</span>
+                  by Sarah & Emma Johnson
+                </div>
+                <div class="gallery-rating">
+                  <span class="stars">★★★★★</span>
+                  <span class="rating-text">5/5</span>
+                </div>
+                <p class="gallery-description">
+                  Our first pottery experience together was absolutely magical!
+                  We decided to make matching bowls for our Sunday morning
+                  breakfast routine...
+                </p>
+                <div class="gallery-stats">
+                  <div class="gallery-stat" onclick="toggleLike('1')">
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <path
+                        d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"
+                      />
+                    </svg>
+                    <span class="like-count">42</span>
+                  </div>
+                  <div class="gallery-stat">
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <path
+                        d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"
+                      />
+                    </svg>
+                    <span>12</span>
+                  </div>
+                  <div class="gallery-stat">
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+                      <line x1="16" y1="2" x2="16" y2="6" />
+                      <line x1="8" y1="2" x2="8" y2="6" />
+                      <line x1="3" y1="10" x2="21" y2="10" />
+                    </svg>
+                    <span>Dec 15</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="gallery-item" data-item-id="2">
+              <div class="gallery-image-container">
+                <img
+                  src="https://images.pexels.com/photos/8066085/pexels-photo-8066085.jpeg"
+                  alt="Traditional Japanese Ceramic Pot"
+                  class="gallery-image"
+                  loading="lazy"
+                />
+                <div class="gallery-overlay">
+                  <div>
+                    <h3>Traditional Japanese Ceramic Pot</h3>
+                    <p>by Michael Chen</p>
+                  </div>
+                </div>
+              </div>
+              <div class="gallery-content">
+                <span class="gallery-category">Workshop Project</span>
+                <h3 class="gallery-title">Traditional Japanese Ceramic Pot</h3>
+                <div class="gallery-artist">
+                  <span class="artist-avatar">MC</span>
+                  by Michael Chen
+                </div>
+                <div class="gallery-rating">
+                  <span class="stars">★★★★★</span>
+                  <span class="rating-text">5/5</span>
+                </div>
+                <p class="gallery-description">
+                  Learned traditional glazing techniques in the advanced
+                  workshop. The instructor taught us about Raku firing and how
+                  to achieve those beautiful metallic finishes...
+                </p>
+                <div class="gallery-stats">
+                  <div class="gallery-stat" onclick="toggleLike('2')">
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <path
+                        d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"
+                      />
+                    </svg>
+                    <span class="like-count">67</span>
+                  </div>
+                  <div class="gallery-stat">
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <path
+                        d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"
+                      />
+                    </svg>
+                    <span>23</span>
+                  </div>
+                  <div class="gallery-stat">
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+                      <line x1="16" y1="2" x2="16" y2="6" />
+                      <line x1="8" y1="2" x2="8" y2="6" />
+                      <line x1="3" y1="10" x2="21" y2="10" />
+                    </svg>
+                    <span>Dec 10</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="gallery-item" data-item-id="3">
+              <div class="gallery-image-container">
+                <img
+                  src="https://images.pexels.com/photos/18635393/pexels-photo-18635393.jpeg"
+                  alt="Sunset Vase Collection"
+                  class="gallery-image"
+                  loading="lazy"
+                />
+                <div class="gallery-overlay">
+                  <div>
+                    <h3>Sunset Vase Collection</h3>
+                    <p>by Lisa Rodriguez</p>
+                  </div>
+                </div>
+              </div>
+              <div class="gallery-content">
+                <span class="gallery-category">Pottery Painting</span>
+                <h3 class="gallery-title">Sunset Vase Collection</h3>
+                <div class="gallery-artist">
+                  <span class="artist-avatar">LR</span>
+                  by Lisa Rodriguez
+                </div>
+                <div class="gallery-rating">
+                  <span class="stars">★★★★★</span>
+                  <span class="rating-text">5/5</span>
+                </div>
+                <p class="gallery-description">
+                  Set of three vases inspired by California sunsets! The
+                  terracotta base with gold highlights was exactly what I
+                  envisioned for my dining room...
+                </p>
+                <div class="gallery-stats">
+                  <div class="gallery-stat" onclick="toggleLike('3')">
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <path
+                        d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"
+                      />
+                    </svg>
+                    <span class="like-count">89</span>
+                  </div>
+                  <div class="gallery-stat">
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <path
+                        d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"
+                      />
+                    </svg>
+                    <span>31</span>
+                  </div>
+                  <div class="gallery-stat">
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+                      <line x1="16" y1="2" x2="16" y2="6" />
+                      <line x1="8" y1="2" x2="8" y2="6" />
+                      <line x1="3" y1="10" x2="21" y2="10" />
+                    </svg>
+                    <span>Dec 8</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="gallery-item" data-item-id="4">
+              <div class="gallery-image-container">
+                <img
+                  src="https://images.pexels.com/photos/7675081/pexels-photo-7675081.jpeg"
+                  alt="Team Building Masterpieces"
+                  class="gallery-image"
+                  loading="lazy"
+                />
+                <div class="gallery-overlay">
+                  <div>
+                    <h3>Team Building Masterpieces</h3>
+                    <p>by Tech Solutions Group</p>
+                  </div>
+                </div>
+              </div>
+              <div class="gallery-content">
+                <span class="gallery-category">Party Creation</span>
+                <h3 class="gallery-title">Team Building Masterpieces</h3>
+                <div class="gallery-artist">
+                  <span class="artist-avatar">TS</span>
+                  by Tech Solutions Group
+                </div>
+                <div class="gallery-rating">
+                  <span class="stars">★★★★★</span>
+                  <span class="rating-text">5/5</span>
+                </div>
+                <p class="gallery-description">
+                  What an amazing team building experience! Our entire company
+                  came here for our quarterly event and everyone created
+                  something unique...
+                </p>
+                <div class="gallery-stats">
+                  <div class="gallery-stat" onclick="toggleLike('4')">
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <path
+                        d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"
+                      />
+                    </svg>
+                    <span class="like-count">56</span>
+                  </div>
+                  <div class="gallery-stat">
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <path
+                        d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"
+                      />
+                    </svg>
+                    <span>18</span>
+                  </div>
+                  <div class="gallery-stat">
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+                      <line x1="16" y1="2" x2="16" y2="6" />
+                      <line x1="8" y1="2" x2="8" y2="6" />
+                      <line x1="3" y1="10" x2="21" y2="10" />
+                    </svg>
+                    <span>Dec 7</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="gallery-item" data-item-id="5">
+              <div class="gallery-image-container">
+                <img
+                  src="https://images.pexels.com/photos/4241344/pexels-photo-4241344.jpeg"
+                  alt="Mother-Daughter Coffee Mugs"
+                  class="gallery-image"
+                  loading="lazy"
+                />
+                <div class="gallery-overlay">
+                  <div>
+                    <h3>Mother-Daughter Coffee Mugs</h3>
+                    <p>by Jennifer & Sophie Martinez</p>
+                  </div>
+                </div>
+              </div>
+              <div class="gallery-content">
+                <span class="gallery-category">Family Project</span>
+                <h3 class="gallery-title">Mother-Daughter Coffee Mugs</h3>
+                <div class="gallery-artist">
+                  <span class="artist-avatar">JS</span>
+                  by Jennifer & Sophie Martinez
+                </div>
+                <div class="gallery-rating">
+                  <span class="stars">★★★★★</span>
+                  <span class="rating-text">5/5</span>
+                </div>
+                <p class="gallery-description">
+                  Special mother-daughter date creating our matching coffee
+                  mugs! Sophie (age 8) was so focused and proud of her
+                  painting...
+                </p>
+                <div class="gallery-stats">
+                  <div class="gallery-stat" onclick="toggleLike('5')">
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <path
+                        d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"
+                      />
+                    </svg>
+                    <span class="like-count">78</span>
+                  </div>
+                  <div class="gallery-stat">
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <path
+                        d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"
+                      />
+                    </svg>
+                    <span>25</span>
+                  </div>
+                  <div class="gallery-stat">
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+                      <line x1="16" y1="2" x2="16" y2="6" />
+                      <line x1="8" y1="2" x2="8" y2="6" />
+                      <line x1="3" y1="10" x2="21" y2="10" />
+                    </svg>
+                    <span>Dec 12</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="gallery-item" data-item-id="6">
+              <div class="gallery-image-container">
+                <img
+                  src="https://images.pexels.com/photos/16374149/pexels-photo-16374149.jpeg"
+                  alt="Birthday Party Fun!"
+                  class="gallery-image"
+                  loading="lazy"
+                />
+                <div class="gallery-overlay">
+                  <div>
+                    <h3>Birthday Party Fun!</h3>
+                    <p>by Birthday Squad - Emma's 10th</p>
+                  </div>
+                </div>
+              </div>
+              <div class="gallery-content">
+                <span class="gallery-category">Party Creation</span>
+                <h3 class="gallery-title">Birthday Party Fun!</h3>
+                <div class="gallery-artist">
+                  <span class="artist-avatar">BS</span>
+                  by Birthday Squad - Emma's 10th
+                </div>
+                <div class="gallery-rating">
+                  <span class="stars">★★★★★</span>
+                  <span class="rating-text">5/5</span>
+                </div>
+                <p class="gallery-description">
+                  Best birthday party ever! Emma invited 8 friends and they all
+                  created amazing pieces. The party room was perfect and the
+                  staff made sure everyone felt like a real artist...
+                </p>
+                <div class="gallery-stats">
+                  <div class="gallery-stat" onclick="toggleLike('6')">
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <path
+                        d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"
+                      />
+                    </svg>
+                    <span class="like-count">92</span>
+                  </div>
+                  <div class="gallery-stat">
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <path
+                        d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"
+                      />
+                    </svg>
+                    <span>34</span>
+                  </div>
+                  <div class="gallery-stat">
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+                      <line x1="16" y1="2" x2="16" y2="6" />
+                      <line x1="8" y1="2" x2="8" y2="6" />
+                      <line x1="3" y1="10" x2="21" y2="10" />
+                    </svg>
+                    <span>Dec 5</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Monthly Artists Spotlight -->
+        <section class="monthly-spotlight">
+          <div class="spotlight-header">
+            <h2>December 2024 - Featured Artists</h2>
+            <div class="spotlight-nav">
+              <button
+                class="spotlight-nav-btn"
+                onclick="changeSpotlightMonth(-1)"
+              >
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <polyline points="15,18 9,12 15,6"></polyline>
+                </svg>
+                Previous Month
+              </button>
+              <button
+                class="spotlight-nav-btn"
+                onclick="changeSpotlightMonth(1)"
+              >
+                Next Month
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <polyline points="9,6 15,12 9,18"></polyline>
+                </svg>
+              </button>
+            </div>
+          </div>
+
+          <div class="spotlight-grid">
+            <div class="spotlight-featured">
+              <div class="spotlight-artist-card">
+                <div class="artist-image">
+                  <img
+                    src="https://images.pexels.com/photos/4241347/pexels-photo-4241347.jpeg"
+                    alt="Sarah & Emma"
+                  />
+                  <div class="artist-badge">Artist of the Month</div>
+                </div>
+                <div class="artist-info">
+                  <h3>Sarah & Emma Johnson</h3>
+                  <p class="artist-title">Mother-Daughter Pottery Duo</p>
+                  <p class="artist-story">
+                    This incredible pair has visited us 8 times this month,
+                    creating beautiful matching sets and learning advanced
+                    glazing techniques together. Their bond through pottery is
+                    truly inspiring!
+                  </p>
+                  <div class="artist-stats">
+                    <div class="stat">
+                      <span class="stat-number">12</span>
+                      <span class="stat-label">Pieces Created</span>
+                    </div>
+                    <div class="stat">
+                      <span class="stat-number">8</span>
+                      <span class="stat-label">Studio Visits</span>
+                    </div>
+                    <div class="stat">
+                      <span class="stat-number">156</span>
+                      <span class="stat-label">Total Likes</span>
+                    </div>
+                  </div>
+                  <button
+                    class="btn btn-outline"
+                    onclick="filterGallery('featured-artist')"
+                  >
+                    View Their Gallery
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="spotlight-highlights">
+              <div class="highlight-card">
+                <h4>
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path
+                      d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"
+                    />
+                  </svg>
+                  Workshop Highlight
+                </h4>
+                <p>
+                  Advanced Glazing Techniques Workshop had 15 participants
+                  create stunning pieces with traditional Japanese glazing
+                  methods.
+                </p>
+                <button
+                  class="btn btn-outline btn-sm"
+                  onclick="filterGallery('workshop')"
+                >
+                  View Workshop Gallery
+                </button>
+              </div>
+
+              <div class="highlight-card">
+                <h4>
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path
+                      d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"
+                    />
+                  </svg>
+                  Most Loved Piece
+                </h4>
+                <p>
+                  "Sunset Vase Collection" by Lisa Rodriguez received 89 likes
+                  this month! Beautiful terracotta and gold glaze combination.
+                </p>
+                <button
+                  class="btn btn-outline btn-sm"
+                  onclick="showMostLoved()"
+                >
+                  See the Piece
+                </button>
+              </div>
+
+              <div class="highlight-card">
+                <h4>
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+                    <line x1="16" y1="2" x2="16" y2="6" />
+                    <line x1="8" y1="2" x2="8" y2="6" />
+                    <line x1="3" y1="10" x2="21" y2="10" />
+                  </svg>
+                  Community Events
+                </h4>
+                <p>
+                  3 birthday parties, 2 team building events, and 1 anniversary
+                  celebration brought 47 new creations to our gallery!
+                </p>
+                <button
+                  class="btn btn-outline btn-sm"
+                  onclick="filterGallery('party')"
+                >
+                  View Party Creations
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Community Stats -->
+        <section class="community-stats">
+          <h2>Our Creative Community</h2>
+          <div class="stats-grid">
+            <div class="stat-card">
+              <div class="stat-icon">
+                <svg
+                  width="32"
+                  height="32"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"
+                  />
+                  <circle cx="12" cy="13" r="3" />
+                </svg>
+              </div>
+              <div class="stat-content">
+                <h3 id="total-pieces">247</h3>
+                <p>Total Pieces Shared</p>
+              </div>
+            </div>
+
+            <div class="stat-card">
+              <div class="stat-icon">
+                <svg
+                  width="32"
+                  height="32"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+                  <circle cx="9" cy="7" r="4" />
+                  <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                </svg>
+              </div>
+              <div class="stat-content">
+                <h3 id="total-artists">89</h3>
+                <p>Community Artists</p>
+              </div>
+            </div>
+
+            <div class="stat-card">
+              <div class="stat-icon">
+                <svg
+                  width="32"
+                  height="32"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"
+                  />
+                </svg>
+              </div>
+              <div class="stat-content">
+                <h3 id="total-likes">1,847</h3>
+                <p>Total Likes Given</p>
+              </div>
+            </div>
+
+            <div class="stat-card">
+              <div class="stat-icon">
+                <svg
+                  width="32"
+                  height="32"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"
+                  />
+                </svg>
+              </div>
+              <div class="stat-content">
+                <h3 id="total-reviews">432</h3>
+                <p>Community Reviews</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <!-- Upload Modal -->
+    <div class="modal" id="upload-modal" style="display: none">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3>Share Your Creation</h3>
+          <button class="modal-close" onclick="hideUploadModal()">
+            &times;
+          </button>
+        </div>
+        <div class="modal-body">
+          <form class="upload-form" id="upload-form">
+            <div class="form-group">
+              <label for="upload-image">Photo of Your Creation *</label>
+              <div class="file-upload">
+                <input
+                  type="file"
+                  id="upload-image"
+                  accept="image/*"
+                  required
+                />
+                <div class="file-upload-display">
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <rect x="3" y="3" width="18" height="18" rx="2" ry="2" />
+                    <circle cx="9" cy="9" r="2" />
+                    <path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21" />
+                  </svg>
+                  <span>Choose a photo or drag and drop</span>
+                  <small>JPG, PNG, or WEBP (max 5MB)</small>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="upload-title">Piece Title *</label>
+                <input
+                  type="text"
+                  id="upload-title"
+                  placeholder="e.g., My First Mug"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="upload-artist">Your Name *</label>
+                <input
+                  type="text"
+                  id="upload-artist"
+                  placeholder="Your name or family name"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="upload-description">Tell us about your piece</label>
+              <textarea
+                id="upload-description"
+                placeholder="Share your pottery journey! What inspired this piece? What techniques did you learn? How was your experience at The Glazery?"
+                rows="4"
+              ></textarea>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="upload-category">Category</label>
+                <select id="upload-category">
+                  <option value="pottery">Pottery Painting</option>
+                  <option value="kids">Kids Creation</option>
+                  <option value="workshop">Workshop Project</option>
+                  <option value="party">Party Creation</option>
+                  <option value="family">Family Project</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="upload-rating">Rate Your Experience</label>
+                <div class="rating-input">
+                  <span class="star" data-rating="1">☆</span>
+                  <span class="star" data-rating="2">☆</span>
+                  <span class="star" data-rating="3">☆</span>
+                  <span class="star" data-rating="4">☆</span>
+                  <span class="star" data-rating="5">☆</span>
+                  <input type="hidden" id="upload-rating" value="5" />
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label>
+                <input type="checkbox" id="upload-consent" required />
+                I give permission for The Glazery to feature my creation in
+                marketing materials and social media
+              </label>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-outline" onclick="hideUploadModal()">
+            Cancel
+          </button>
+          <button class="btn btn-primary" onclick="submitUpload()">
+            Share My Creation
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="gallery.js"></script>
+  </body>
+</html>

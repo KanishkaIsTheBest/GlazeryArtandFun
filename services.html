@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our Services - The Glazery</title>
+    <meta
+      name="description"
+      content="Discover our pottery services including paint-your-own pottery, workshops, and private parties at The Glazery."
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="light-theme">
+    <!-- Header -->
+    <header class="header">
+      <div class="container">
+        <div class="header-content">
+          <a href="index.html" class="logo">
+            <div class="logo-icon">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <circle cx="13.5" cy="6.5" r=".5" fill="currentColor" />
+                <circle cx="17.5" cy="10.5" r=".5" fill="currentColor" />
+                <circle cx="8.5" cy="7.5" r=".5" fill="currentColor" />
+                <circle cx="6.5" cy="12.5" r=".5" fill="currentColor" />
+                <path
+                  d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.554C21.965 6.012 17.461 2 12 2z"
+                />
+              </svg>
+            </div>
+            <div class="logo-text">
+              <h1>Our Services</h1>
+              <p>Creative Experiences</p>
+            </div>
+          </a>
+          <nav class="nav">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="booking.html" class="nav-link">Book Now</a>
+            <a href="services.html" class="nav-link active">Services</a>
+            <a href="gallery.html" class="nav-link">Gallery</a>
+            <a href="contact.html" class="nav-link">Contact</a>
+            <button class="theme-toggle" onclick="toggleTheme()">
+              <svg
+                class="moon-icon"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z" />
+              </svg>
+              <svg
+                class="sun-icon"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                style="display: none"
+              >
+                <circle cx="12" cy="12" r="4" />
+                <path d="m12 1 0 2" />
+                <path d="m12 21 0 2" />
+                <path d="m4.22 4.22 1.42 1.42" />
+                <path d="m18.36 18.36 1.42 1.42" />
+                <path d="m1 12 2 0" />
+                <path d="m21 12 2 0" />
+                <path d="m4.22 19.78 1.42-1.42" />
+                <path d="m18.36 5.64 1.42-1.42" />
+              </svg>
+            </button>
+          </nav>
+          <div class="header-actions">
+            <button class="mobile-theme-toggle" onclick="toggleTheme()">
+              <svg
+                class="moon-icon"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z" />
+              </svg>
+              <svg
+                class="sun-icon"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                style="display: none"
+              >
+                <circle cx="12" cy="12" r="4" />
+                <path d="m12 1 0 2" />
+                <path d="m12 21 0 2" />
+                <path d="m4.22 4.22 1.42 1.42" />
+                <path d="m18.36 18.36 1.42 1.42" />
+                <path d="m1 12 2 0" />
+                <path d="m21 12 2 0" />
+                <path d="m4.22 19.78 1.42-1.42" />
+                <path d="m18.36 5.64 1.42-1.42" />
+              </svg>
+            </button>
+            <a href="booking.html" class="btn btn-primary">Book Now</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+      <section class="hero">
+        <div class="container">
+          <h1 class="hero-title">
+            Creative Experiences
+            <span class="text-accent">For Everyone</span>
+          </h1>
+          <p class="hero-description">
+            From beginner-friendly pottery painting to advanced workshops, we
+            offer experiences tailored to every skill level and occasion.
+          </p>
+          <div class="hero-actions">
+            <a href="booking.html" class="btn btn-primary btn-lg">
+              Book Your Experience
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Services Section -->
+      <section class="services">
+        <div class="container">
+          <div class="services-grid">
+            <div class="service-detail-card">
+              <div class="service-image">
+                <img
+                  src="https://images.pexels.com/photos/8066085/pexels-photo-8066085.jpeg"
+                  alt="Paint Your Own Pottery"
+                />
+              </div>
+              <div class="service-content">
+                <h2>Paint Your Own Pottery</h2>
+                <p class="service-price">Starting at $25 per person</p>
+                <p class="service-duration">2 hours • Up to 12 people</p>
+                <p>
+                  Choose from hundreds of ceramic pieces and bring your
+                  creativity to life with our extensive glaze selection. Perfect
+                  for all ages and skill levels.
+                </p>
+                <ul class="service-features">
+                  <li>500+ ceramic pieces to choose from</li>
+                  <li>50+ professional glaze colors</li>
+                  <li>All tools and materials included</li>
+                  <li>Same-day firing available</li>
+                  <li>Expert guidance and tips</li>
+                </ul>
+                <a href="booking.html" class="btn btn-primary">Book Now</a>
+              </div>
+            </div>
+
+            <div class="service-detail-card">
+              <div class="service-image">
+                <img
+                  src="https://images.pexels.com/photos/4241344/pexels-photo-4241344.jpeg"
+                  alt="Kids Creative Sessions"
+                />
+              </div>
+              <div class="service-content">
+                <h2>Kids Creative Sessions</h2>
+                <p class="service-price">Starting at $18 per child</p>
+                <p class="service-duration">90 minutes • Up to 8 kids</p>
+                <p>
+                  Specially designed pottery experiences for children with
+                  age-appropriate projects and child-safe materials.
+                </p>
+                <ul class="service-features">
+                  <li>Age-appropriate ceramic pieces (4-12 years)</li>
+                  <li>Child-safe materials and tools</li>
+                  <li>Fun, educational instruction</li>
+                  <li>Birthday party packages available</li>
+                  <li>Parent participation welcome</li>
+                </ul>
+                <a href="booking.html" class="btn btn-primary">Book Now</a>
+              </div>
+            </div>
+
+            <div class="service-detail-card">
+              <div class="service-image">
+                <img
+                  src="https://images.pexels.com/photos/16374149/pexels-photo-16374149.jpeg"
+                  alt="Private Parties"
+                />
+              </div>
+              <div class="service-content">
+                <h2>Private Party Experience</h2>
+                <p class="service-price">Starting at $45 per person</p>
+                <p class="service-duration">2.5 hours • Up to 20 people</p>
+                <p>
+                  Exclusive studio access for your special celebration with
+                  dedicated party host and customizable experience.
+                </p>
+                <ul class="service-features">
+                  <li>Private studio access</li>
+                  <li>Dedicated party host</li>
+                  <li>Customizable themes</li>
+                  <li>Catering options available</li>
+                  <li>Perfect for birthdays and events</li>
+                </ul>
+                <a href="contact.html" class="btn btn-primary">Get Quote</a>
+              </div>
+            </div>
+
+            <div class="service-detail-card">
+              <div class="service-image">
+                <img
+                  src="https://images.pexels.com/photos/7675081/pexels-photo-7675081.jpeg"
+                  alt="Wheel Throwing Workshop"
+                />
+              </div>
+              <div class="service-content">
+                <h2>Wheel Throwing Workshop</h2>
+                <p class="service-price">Starting at $55 per person</p>
+                <p class="service-duration">3 hours • Up to 6 people</p>
+                <p>
+                  Learn the ancient art of pottery wheel throwing with expert
+                  instruction in small, intimate classes.
+                </p>
+                <ul class="service-features">
+                  <li>Professional pottery wheel access</li>
+                  <li>Expert instruction included</li>
+                  <li>All clay and tools provided</li>
+                  <li>Small class sizes for personal attention</li>
+                  <li>Take home multiple pieces</li>
+                </ul>
+                <a href="booking.html" class="btn btn-primary">Book Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

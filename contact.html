@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us - The Glazery</title>
+    <meta
+      name="description"
+      content="Get in touch with The Glazery for questions, bookings, or to plan your pottery experience."
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="light-theme">
+    <!-- Header -->
+    <header class="header">
+      <div class="container">
+        <div class="header-content">
+          <a href="index.html" class="logo">
+            <div class="logo-icon">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <circle cx="13.5" cy="6.5" r=".5" fill="currentColor" />
+                <circle cx="17.5" cy="10.5" r=".5" fill="currentColor" />
+                <circle cx="8.5" cy="7.5" r=".5" fill="currentColor" />
+                <circle cx="6.5" cy="12.5" r=".5" fill="currentColor" />
+                <path
+                  d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.554C21.965 6.012 17.461 2 12 2z"
+                />
+              </svg>
+            </div>
+            <div class="logo-text">
+              <h1>Contact Us</h1>
+              <p>Get in Touch</p>
+            </div>
+          </a>
+          <nav class="nav">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="booking.html" class="nav-link">Book Now</a>
+            <a href="services.html" class="nav-link">Services</a>
+            <a href="gallery.html" class="nav-link">Gallery</a>
+            <a href="contact.html" class="nav-link active">Contact</a>
+            <button class="theme-toggle" onclick="toggleTheme()">
+              <svg
+                class="moon-icon"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z" />
+              </svg>
+              <svg
+                class="sun-icon"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                style="display: none"
+              >
+                <circle cx="12" cy="12" r="4" />
+                <path d="m12 1 0 2" />
+                <path d="m12 21 0 2" />
+                <path d="m4.22 4.22 1.42 1.42" />
+                <path d="m18.36 18.36 1.42 1.42" />
+                <path d="m1 12 2 0" />
+                <path d="m21 12 2 0" />
+                <path d="m4.22 19.78 1.42-1.42" />
+                <path d="m18.36 5.64 1.42-1.42" />
+              </svg>
+            </button>
+          </nav>
+          <div class="header-actions">
+            <button class="mobile-theme-toggle" onclick="toggleTheme()">
+              <svg
+                class="moon-icon"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z" />
+              </svg>
+              <svg
+                class="sun-icon"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                style="display: none"
+              >
+                <circle cx="12" cy="12" r="4" />
+                <path d="m12 1 0 2" />
+                <path d="m12 21 0 2" />
+                <path d="m4.22 4.22 1.42 1.42" />
+                <path d="m18.36 18.36 1.42 1.42" />
+                <path d="m1 12 2 0" />
+                <path d="m21 12 2 0" />
+                <path d="m4.22 19.78 1.42-1.42" />
+                <path d="m18.36 5.64 1.42-1.42" />
+              </svg>
+            </button>
+            <a href="booking.html" class="btn btn-primary">Book Now</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="contact">
+      <div class="container">
+        <div class="contact-grid">
+          <div class="contact-info">
+            <h2>Visit Us Today</h2>
+            <div class="contact-item">
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                <circle cx="12" cy="10" r="3" />
+              </svg>
+              <div>
+                <strong>Location</strong>
+                <p>123 Creative Lane<br />Arts District, CA 90210</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+                />
+              </svg>
+              <div>
+                <strong>Phone</strong>
+                <p>(555) 123-CLAY</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                />
+                <polyline points="22,6 12,13 2,6" />
+              </svg>
+              <div>
+                <strong>Email</strong>
+                <p>hello@theglazery.com</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="hours-card">
+            <h3>Studio Hours</h3>
+            <div class="hours-list">
+              <div class="hours-item">
+                <span>Monday - Thursday</span>
+                <span>10:00 AM - 8:00 PM</span>
+              </div>
+              <div class="hours-item">
+                <span>Friday - Saturday</span>
+                <span>10:00 AM - 9:00 PM</span>
+              </div>
+              <div class="hours-item">
+                <span>Sunday</span>
+                <span>11:00 AM - 6:00 PM</span>
+              </div>
+            </div>
+            <div class="walk-ins-notice">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <circle cx="12" cy="12" r="10" />
+                <polyline points="12,6 12,12 16,14" />
+              </svg>
+              <div>
+                <strong>Walk-ins Welcome!</strong>
+                <p>
+                  No appointment needed for individual sessions. Book ahead for
+                  groups of 6+.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

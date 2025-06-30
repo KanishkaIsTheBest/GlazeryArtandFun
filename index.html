@@ -1,0 +1,719 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Glazery - Art & Fun Pottery Studio</title>
+    <meta
+      name="description"
+      content="Paint-it-yourself ceramics studio for families, parties, and groups. Book your creative pottery session today!"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="light-theme">
+    <!-- Header -->
+    <header class="header">
+      <div class="container">
+        <div class="header-content">
+          <div class="logo">
+            <div class="logo-icon">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <circle cx="13.5" cy="6.5" r=".5" fill="currentColor" />
+                <circle cx="17.5" cy="10.5" r=".5" fill="currentColor" />
+                <circle cx="8.5" cy="7.5" r=".5" fill="currentColor" />
+                <circle cx="6.5" cy="12.5" r=".5" fill="currentColor" />
+                <path
+                  d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.554C21.965 6.012 17.461 2 12 2z"
+                />
+              </svg>
+            </div>
+            <div class="logo-text">
+              <h1>The Glazery</h1>
+              <p>Art & Fun</p>
+            </div>
+          </div>
+          <nav class="nav">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="booking.html" class="nav-link">Book Now</a>
+            <a href="services.html" class="nav-link">Services</a>
+            <a href="gallery.html" class="nav-link">Gallery</a>
+            <a href="contact.html" class="nav-link">Contact</a>
+            <button class="theme-toggle" onclick="toggleTheme()">
+              <svg
+                class="moon-icon"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z" />
+              </svg>
+              <svg
+                class="sun-icon"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                style="display: none"
+              >
+                <circle cx="12" cy="12" r="4" />
+                <path d="m12 1 0 2" />
+                <path d="m12 21 0 2" />
+                <path d="m4.22 4.22 1.42 1.42" />
+                <path d="m18.36 18.36 1.42 1.42" />
+                <path d="m1 12 2 0" />
+                <path d="m21 12 2 0" />
+                <path d="m4.22 19.78 1.42-1.42" />
+                <path d="m18.36 5.64 1.42-1.42" />
+              </svg>
+            </button>
+          </nav>
+          <div class="header-actions">
+            <button class="mobile-theme-toggle" onclick="toggleTheme()">
+              <svg
+                class="moon-icon"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z" />
+              </svg>
+              <svg
+                class="sun-icon"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                style="display: none"
+              >
+                <circle cx="12" cy="12" r="4" />
+                <path d="m12 1 0 2" />
+                <path d="m12 21 0 2" />
+                <path d="m4.22 4.22 1.42 1.42" />
+                <path d="m18.36 18.36 1.42 1.42" />
+                <path d="m1 12 2 0" />
+                <path d="m21 12 2 0" />
+                <path d="m4.22 19.78 1.42-1.42" />
+                <path d="m18.36 5.64 1.42-1.42" />
+              </svg>
+            </button>
+            <a href="booking.html" class="btn btn-primary">Book Your Session</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+      <!-- Hero Section -->
+      <section class="hero">
+        <div class="container">
+          <div class="hero-badge">Paint It Yourself Ceramics Studio</div>
+          <h1 class="hero-title">
+            Create Beautiful<br />
+            <span class="text-accent">Memories Together</span>
+          </h1>
+          <p class="hero-description">
+            Unleash your creativity at The Glazery! Perfect for families,
+            friends, dates, and parties. Paint pottery pieces and take home your
+            masterpiece the same day.
+          </p>
+          <div class="hero-actions">
+            <a href="booking.html" class="btn btn-primary btn-lg">
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+                <line x1="16" y1="2" x2="16" y2="6" />
+                <line x1="8" y1="2" x2="8" y2="6" />
+                <line x1="3" y1="10" x2="21" y2="10" />
+              </svg>
+              Book Your Session
+            </a>
+            <a href="gallery.html" class="btn btn-outline btn-lg">
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  d="m23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"
+                />
+                <circle cx="12" cy="13" r="3" />
+              </svg>
+              View Gallery
+            </a>
+          </div>
+
+          <!-- Stats -->
+          <div class="hero-stats">
+            <div class="stat">
+              <div class="stat-number">500+</div>
+              <div class="stat-label">Ceramic Pieces</div>
+            </div>
+            <div class="stat">
+              <div class="stat-number">50+</div>
+              <div class="stat-label">Glaze Colors</div>
+            </div>
+            <div class="stat">
+              <div class="stat-number">2hrs</div>
+              <div class="stat-label">Average Session</div>
+            </div>
+            <div class="stat">
+              <div class="stat-number">Same Day</div>
+              <div class="stat-label">Take Home</div>
+            </div>
+          </div>
+
+          <!-- Featured Gallery -->
+          <div class="hero-gallery">
+            <div class="gallery-item">
+              <img
+                src="https://images.pexels.com/photos/4241347/pexels-photo-4241347.jpeg"
+                alt="Family Fun"
+              />
+              <div class="gallery-overlay">
+                <p>Family Fun</p>
+              </div>
+            </div>
+            <div class="gallery-item">
+              <img
+                src="https://images.pexels.com/photos/8066085/pexels-photo-8066085.jpeg"
+                alt="Expert Guidance"
+              />
+              <div class="gallery-overlay">
+                <p>Expert Guidance</p>
+              </div>
+            </div>
+            <div class="gallery-item">
+              <img
+                src="https://images.pexels.com/photos/18635393/pexels-photo-18635393.jpeg"
+                alt="Beautiful Results"
+              />
+              <div class="gallery-overlay">
+                <p>Beautiful Results</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Services Section -->
+      <section class="services">
+        <div class="container">
+          <div class="section-header">
+            <h2>What Makes Us Special</h2>
+            <p>
+              From casual creativity to memorable celebrations, we offer
+              experiences for everyone
+            </p>
+          </div>
+
+          <div class="services-grid">
+            <a href="services.html" class="service-card">
+              <div class="service-icon">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <circle cx="13.5" cy="6.5" r=".5" fill="currentColor" />
+                  <circle cx="17.5" cy="10.5" r=".5" fill="currentColor" />
+                  <circle cx="8.5" cy="7.5" r=".5" fill="currentColor" />
+                  <circle cx="6.5" cy="12.5" r=".5" fill="currentColor" />
+                  <path
+                    d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.554C21.965 6.012 17.461 2 12 2z"
+                  />
+                </svg>
+              </div>
+              <h3>Paint Your Own Pottery</h3>
+              <p class="service-price">Starting at $15</p>
+              <p>
+                Choose from hundreds of ceramic pieces and bring your creativity
+                to life with our extensive collection of glazes and tools.
+              </p>
+            </a>
+
+            <a href="services.html" class="service-card">
+              <div class="service-icon">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+                  <circle cx="9" cy="7" r="4" />
+                  <path d="m22 21-3-3 3-3" />
+                  <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+                </svg>
+              </div>
+              <h3>Group Events & Parties</h3>
+              <p class="service-price">Group rates available</p>
+              <p>
+                Perfect for birthday parties, date nights, team building, or
+                family bonding. We handle everything so you can focus on
+                creating memories.
+              </p>
+            </a>
+
+            <a href="services.html" class="service-card">
+              <div class="service-icon">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <rect x="3" y="8" width="18" height="4" rx="1" />
+                  <path d="m12 8-2-2v6l2-2 2 2v-6l-2 2" />
+                  <path d="M8 21h8" />
+                  <path d="M12 17v4" />
+                </svg>
+              </div>
+              <h3>Custom Workshops</h3>
+              <p class="service-price">Starting at $45</p>
+              <p>
+                Learn advanced techniques like wheel throwing, hand building,
+                and glazing from our experienced ceramic artists.
+              </p>
+            </a>
+
+            <a href="services.html" class="service-card">
+              <div class="service-icon">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"
+                  />
+                </svg>
+              </div>
+              <h3>Kids' Creative Sessions</h3>
+              <p class="service-price">Starting at $12</p>
+              <p>
+                Specially designed sessions for children with age-appropriate
+                projects, tools, and guidance. Watch their imagination come
+                alive!
+              </p>
+            </a>
+          </div>
+
+          <!-- Features Section -->
+          <div class="features-section">
+            <div class="features-content">
+              <h3>Everything You Need Included</h3>
+              <ul class="features-list">
+                <li>All materials and tools included</li>
+                <li>Professional kiln firing</li>
+                <li>Food and drinks welcome</li>
+                <li>Take home same day glazed pieces</li>
+                <li>Private party rooms available</li>
+                <li>No experience necessary</li>
+              </ul>
+              <div class="cafe-card">
+                <div class="cafe-icon">
+                  <svg
+                    width="32"
+                    height="32"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path d="m18 8 4 4-4 4" />
+                    <path d="M2 12h16" />
+                  </svg>
+                </div>
+                <div>
+                  <h4>Café & Snacks</h4>
+                  <p>Food and drinks available</p>
+                </div>
+              </div>
+            </div>
+            <div class="features-images">
+              <div class="feature-image-large">
+                <img
+                  src="https://images.pexels.com/photos/7675081/pexels-photo-7675081.jpeg"
+                  alt="Studio Workspace"
+                />
+                <div class="image-overlay">Studio Workspace</div>
+              </div>
+              <div class="feature-images-small">
+                <div class="feature-image-small">
+                  <img
+                    src="https://images.pexels.com/photos/4241344/pexels-photo-4241344.jpeg"
+                    alt="Family Creating"
+                  />
+                </div>
+                <div class="feature-image-small">
+                  <img
+                    src="https://images.pexels.com/photos/16374149/pexels-photo-16374149.jpeg"
+                    alt="Group Fun"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Gallery Preview Section -->
+      <section class="gallery-preview">
+        <div class="container">
+          <div class="section-header">
+            <h2>See Our Studio in Action</h2>
+            <p>Take a peek at the creative magic happening every day</p>
+          </div>
+
+          <div class="gallery-grid">
+            <div class="gallery-main">
+              <img
+                src="https://images.pexels.com/photos/4241347/pexels-photo-4241347.jpeg"
+                alt="Family Bonding"
+              />
+              <div class="gallery-content">
+                <h3>Family Bonding</h3>
+                <p>Create lasting memories together</p>
+              </div>
+            </div>
+            <div class="gallery-side">
+              <div class="gallery-small">
+                <img
+                  src="https://images.pexels.com/photos/8066085/pexels-photo-8066085.jpeg"
+                  alt="Expert Guidance"
+                />
+                <div class="gallery-content-small">Expert Guidance</div>
+              </div>
+              <div class="gallery-small">
+                <img
+                  src="https://images.pexels.com/photos/7675081/pexels-photo-7675081.jpeg"
+                  alt="Creative Space"
+                />
+                <div class="gallery-content-small">Creative Space</div>
+              </div>
+            </div>
+            <div class="gallery-final">
+              <img
+                src="https://images.pexels.com/photos/18635393/pexels-photo-18635393.jpeg"
+                alt="Beautiful Results"
+              />
+              <div class="gallery-content">
+                <h3>Beautiful Results</h3>
+                <p>Take home your masterpiece</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery-cta">
+            <a href="gallery.html" class="btn btn-outline">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  d="m23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"
+                />
+                <circle cx="12" cy="13" r="3" />
+              </svg>
+              View Full Gallery
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Testimonials Section -->
+      <section class="testimonials">
+        <div class="container">
+          <div class="section-header">
+            <h2>What Our Customers Say</h2>
+            <p>
+              Join thousands of happy creators who've made memories at The
+              Glazery
+            </p>
+          </div>
+
+          <div class="testimonials-grid">
+            <div class="testimonial-card">
+              <div class="stars">★★★★★</div>
+              <p>
+                "The perfect family activity! My kids love coming here every
+                month. The staff is so patient and helpful."
+              </p>
+              <cite>- Sarah M.</cite>
+            </div>
+            <div class="testimonial-card">
+              <div class="stars">★★★★★</div>
+              <p>
+                "We had our date night here and it was amazing. So relaxing and
+                fun to create something together."
+              </p>
+              <cite>- Mike & Jessica</cite>
+            </div>
+            <div class="testimonial-card">
+              <div class="stars">★★★★★</div>
+              <p>
+                "Great team building experience! Everyone left with beautiful
+                pieces and stronger connections."
+              </p>
+              <cite>- Corporate Team</cite>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section class="contact">
+        <div class="container">
+          <div class="contact-grid">
+            <div class="contact-info">
+              <h2>Visit Us Today</h2>
+              <div class="contact-item">
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                  <circle cx="12" cy="10" r="3" />
+                </svg>
+                <div>
+                  <strong>Location</strong>
+                  <p>123 Creative Lane<br />Arts District, CA 90210</p>
+                </div>
+              </div>
+              <div class="contact-item">
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+                  />
+                </svg>
+                <div>
+                  <strong>Phone</strong>
+                  <p>(555) 123-CLAY</p>
+                </div>
+              </div>
+              <div class="contact-item">
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                  />
+                  <polyline points="22,6 12,13 2,6" />
+                </svg>
+                <div>
+                  <strong>Email</strong>
+                  <p>hello@theglazery.com</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="hours-card">
+              <h3>Studio Hours</h3>
+              <div class="hours-list">
+                <div class="hours-item">
+                  <span>Monday - Thursday</span>
+                  <span>10:00 AM - 8:00 PM</span>
+                </div>
+                <div class="hours-item">
+                  <span>Friday - Saturday</span>
+                  <span>10:00 AM - 9:00 PM</span>
+                </div>
+                <div class="hours-item">
+                  <span>Sunday</span>
+                  <span>11:00 AM - 6:00 PM</span>
+                </div>
+              </div>
+              <div class="walk-ins-notice">
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <circle cx="12" cy="12" r="10" />
+                  <polyline points="12,6 12,12 16,14" />
+                </svg>
+                <div>
+                  <strong>Walk-ins Welcome!</strong>
+                  <p>
+                    No appointment needed for individual sessions. Book ahead
+                    for groups of 6+.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA Section -->
+      <section class="cta">
+        <div class="container">
+          <h2>Ready to Create Something Beautiful?</h2>
+          <p>
+            Book your pottery painting session today and discover the joy of
+            creating with your hands. Perfect for all ages and skill levels!
+          </p>
+          <a href="booking.html" class="btn btn-cta">
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+              <line x1="16" y1="2" x2="16" y2="6" />
+              <line x1="8" y1="2" x2="8" y2="6" />
+              <line x1="3" y1="10" x2="21" y2="10" />
+            </svg>
+            Schedule Your Visit
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-brand">
+            <div class="footer-logo">
+              <div class="logo-icon">
+                <svg
+                  width="32"
+                  height="32"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <circle cx="13.5" cy="6.5" r=".5" fill="currentColor" />
+                  <circle cx="17.5" cy="10.5" r=".5" fill="currentColor" />
+                  <circle cx="8.5" cy="7.5" r=".5" fill="currentColor" />
+                  <circle cx="6.5" cy="12.5" r=".5" fill="currentColor" />
+                  <path
+                    d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.554C21.965 6.012 17.461 2 12 2z"
+                  />
+                </svg>
+              </div>
+              <div>
+                <h3>The Glazery</h3>
+                <p>Art & Fun</p>
+              </div>
+            </div>
+            <p>
+              Creating beautiful memories one ceramic piece at a time. Where art
+              meets fun for the whole family.
+            </p>
+          </div>
+          <div class="footer-links">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="booking.html">Book a Session</a></li>
+              <li><a href="services.html">Private Parties</a></li>
+              <li><a href="gift-cards.html">Gift Cards</a></li>
+              <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+          </div>
+          <div class="footer-social">
+            <h4>Follow Us</h4>
+            <ul>
+              <li>
+                <a href="https://instagram.com/theglazery" target="_blank"
+                  >Instagram</a
+                >
+              </li>
+              <li>
+                <a href="https://facebook.com/theglazery" target="_blank"
+                  >Facebook</a
+                >
+              </li>
+              <li>
+                <a href="https://tiktok.com/@theglazery" target="_blank"
+                  >TikTok</a
+                >
+              </li>
+              <li>
+                <a href="https://pinterest.com/theglazery" target="_blank"
+                  >Pinterest</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2024 The Glazery Art & Fun. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

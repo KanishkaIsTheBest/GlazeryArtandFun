@@ -1,0 +1,564 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book Your Session - The Glazery</title>
+    <meta
+      name="description"
+      content="Book your pottery painting session at The Glazery. Choose your service, date, and time for a creative experience."
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="booking.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="light-theme">
+    <!-- Header -->
+    <header class="header">
+      <div class="container">
+        <div class="header-content">
+          <a href="index.html" class="logo">
+            <div class="logo-icon">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <circle cx="13.5" cy="6.5" r=".5" fill="currentColor" />
+                <circle cx="17.5" cy="10.5" r=".5" fill="currentColor" />
+                <circle cx="8.5" cy="7.5" r=".5" fill="currentColor" />
+                <circle cx="6.5" cy="12.5" r=".5" fill="currentColor" />
+                <path
+                  d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.554C21.965 6.012 17.461 2 12 2z"
+                />
+              </svg>
+            </div>
+            <div class="logo-text">
+              <h1>The Glazery</h1>
+              <p>Art & Fun</p>
+            </div>
+          </a>
+          <nav class="nav">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="booking.html" class="nav-link active">Book Now</a>
+            <a href="about.html" class="nav-link">About</a>
+            <button class="theme-toggle" onclick="toggleTheme()">
+              <svg
+                class="moon-icon"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z" />
+              </svg>
+              <svg
+                class="sun-icon"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                style="display: none"
+              >
+                <circle cx="12" cy="12" r="4" />
+                <path d="m12 1 0 2" />
+                <path d="m12 21 0 2" />
+                <path d="m4.22 4.22 1.42 1.42" />
+                <path d="m18.36 18.36 1.42 1.42" />
+                <path d="m1 12 2 0" />
+                <path d="m21 12 2 0" />
+                <path d="m4.22 19.78 1.42-1.42" />
+                <path d="m18.36 5.64 1.42-1.42" />
+              </svg>
+            </button>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="booking-main">
+      <div class="container">
+        <div class="booking-header">
+          <h1>Book Your Creative Session</h1>
+          <p>Choose your service, date, and time to get started</p>
+        </div>
+
+        <!-- Progress Steps -->
+        <div class="progress-steps">
+          <div class="step active" data-step="1">
+            <div class="step-number">1</div>
+            <span>Service</span>
+          </div>
+          <div class="step" data-step="2">
+            <div class="step-number">2</div>
+            <span>Date</span>
+          </div>
+          <div class="step" data-step="3">
+            <div class="step-number">3</div>
+            <span>Time</span>
+          </div>
+          <div class="step" data-step="4">
+            <div class="step-number">4</div>
+            <span>Details</span>
+          </div>
+        </div>
+
+        <!-- Booking Content -->
+        <div class="booking-content">
+          <div class="booking-main-content">
+            <!-- Step 1: Service Selection -->
+            <div class="booking-step active" id="step-1">
+              <div class="step-header">
+                <h2>Choose Your Service</h2>
+              </div>
+              <div class="services-grid">
+                <div
+                  class="service-option"
+                  data-service="pottery-painting"
+                  data-price="25"
+                  data-duration="120"
+                >
+                  <div class="service-content">
+                    <h3>Pottery Painting</h3>
+                    <p class="service-price">Starting at $25</p>
+                    <p>
+                      Paint your own ceramic pieces with our extensive glaze
+                      selection
+                    </p>
+                    <div class="service-details">
+                      <span
+                        ><svg
+                          width="16"
+                          height="16"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                        >
+                          <circle cx="12" cy="12" r="10" />
+                          <polyline points="12,6 12,12 16,14" />
+                        </svg>
+                        2 hours</span
+                      >
+                      <span
+                        ><svg
+                          width="16"
+                          height="16"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                        >
+                          <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+                          <circle cx="9" cy="7" r="4" />
+                          <path d="m22 21-3-3 3-3" />
+                        </svg>
+                        Up to 12 people</span
+                      >
+                    </div>
+                  </div>
+                </div>
+
+                <div
+                  class="service-option"
+                  data-service="kids-session"
+                  data-price="18"
+                  data-duration="90"
+                >
+                  <div class="service-content">
+                    <h3>Kids Creative Session</h3>
+                    <p class="service-price">Starting at $18</p>
+                    <p>
+                      Age-appropriate pottery projects for children with
+                      guidance
+                    </p>
+                    <div class="service-details">
+                      <span
+                        ><svg
+                          width="16"
+                          height="16"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                        >
+                          <circle cx="12" cy="12" r="10" />
+                          <polyline points="12,6 12,12 16,14" />
+                        </svg>
+                        90 min</span
+                      >
+                      <span
+                        ><svg
+                          width="16"
+                          height="16"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                        >
+                          <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+                          <circle cx="9" cy="7" r="4" />
+                          <path d="m22 21-3-3 3-3" />
+                        </svg>
+                        Up to 8 kids</span
+                      >
+                    </div>
+                  </div>
+                </div>
+
+                <div
+                  class="service-option"
+                  data-service="private-party"
+                  data-price="45"
+                  data-duration="150"
+                >
+                  <div class="service-content">
+                    <h3>Private Party</h3>
+                    <p class="service-price">Starting at $45</p>
+                    <p>Exclusive studio access for your group celebration</p>
+                    <div class="service-details">
+                      <span
+                        ><svg
+                          width="16"
+                          height="16"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                        >
+                          <circle cx="12" cy="12" r="10" />
+                          <polyline points="12,6 12,12 16,14" />
+                        </svg>
+                        2.5 hours</span
+                      >
+                      <span
+                        ><svg
+                          width="16"
+                          height="16"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                        >
+                          <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+                          <circle cx="9" cy="7" r="4" />
+                          <path d="m22 21-3-3 3-3" />
+                        </svg>
+                        Up to 20 people</span
+                      >
+                    </div>
+                  </div>
+                </div>
+
+                <div
+                  class="service-option"
+                  data-service="wheel-throwing"
+                  data-price="55"
+                  data-duration="180"
+                >
+                  <div class="service-content">
+                    <h3>Wheel Throwing Workshop</h3>
+                    <p class="service-price">Starting at $55</p>
+                    <p>
+                      Learn the art of pottery wheel throwing with expert
+                      instruction
+                    </p>
+                    <div class="service-details">
+                      <span
+                        ><svg
+                          width="16"
+                          height="16"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                        >
+                          <circle cx="12" cy="12" r="10" />
+                          <polyline points="12,6 12,12 16,14" />
+                        </svg>
+                        3 hours</span
+                      >
+                      <span
+                        ><svg
+                          width="16"
+                          height="16"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                        >
+                          <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+                          <circle cx="9" cy="7" r="4" />
+                          <path d="m22 21-3-3 3-3" />
+                        </svg>
+                        Up to 6 people</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Step 2: Date Selection -->
+            <div class="booking-step" id="step-2">
+              <div class="step-header">
+                <button class="back-button" onclick="goToPreviousStep()">
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path d="m15 18-6-6 6-6" />
+                  </svg>
+                  Back
+                </button>
+                <h2>Select Date</h2>
+              </div>
+              <div class="calendar-container">
+                <div class="calendar-header">
+                  <button class="calendar-nav" id="prev-month">
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <path d="m15 18-6-6 6-6" />
+                    </svg>
+                  </button>
+                  <h3 id="calendar-month-year"></h3>
+                  <button class="calendar-nav" id="next-month">
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <path d="m9 18 6-6-6-6" />
+                    </svg>
+                  </button>
+                </div>
+                <div class="calendar-grid">
+                  <div class="calendar-day-header">Sun</div>
+                  <div class="calendar-day-header">Mon</div>
+                  <div class="calendar-day-header">Tue</div>
+                  <div class="calendar-day-header">Wed</div>
+                  <div class="calendar-day-header">Thu</div>
+                  <div class="calendar-day-header">Fri</div>
+                  <div class="calendar-day-header">Sat</div>
+                  <!-- Calendar days will be populated by JavaScript -->
+                </div>
+              </div>
+            </div>
+
+            <!-- Step 3: Time Selection -->
+            <div class="booking-step" id="step-3">
+              <div class="step-header">
+                <button class="back-button" onclick="goToPreviousStep()">
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path d="m15 18-6-6 6-6" />
+                  </svg>
+                  Back
+                </button>
+                <h2>Available Times</h2>
+                <p class="selected-date-display"></p>
+              </div>
+              <div class="time-slots-container">
+                <div class="time-slots-grid">
+                  <!-- Time slots will be populated by JavaScript -->
+                </div>
+              </div>
+            </div>
+
+            <!-- Step 4: Booking Details -->
+            <div class="booking-step" id="step-4">
+              <div class="step-header">
+                <button class="back-button" onclick="goToPreviousStep()">
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path d="m15 18-6-6 6-6" />
+                  </svg>
+                  Back
+                </button>
+                <h2>Booking Details</h2>
+              </div>
+              <form class="booking-form" id="booking-form">
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="customer-name">Name *</label>
+                    <input
+                      type="text"
+                      id="customer-name"
+                      name="customerName"
+                      required
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="participants">Participants *</label>
+                    <select id="participants" name="participants" required>
+                      <option value="">Select number</option>
+                      <!-- Options will be populated by JavaScript -->
+                    </select>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="customer-email">Email *</label>
+                  <input
+                    type="email"
+                    id="customer-email"
+                    name="customerEmail"
+                    required
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label for="customer-phone">Phone *</label>
+                  <input
+                    type="tel"
+                    id="customer-phone"
+                    name="customerPhone"
+                    required
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label for="special-requests"
+                    >Special Requests (Optional)</label
+                  >
+                  <textarea
+                    id="special-requests"
+                    name="specialRequests"
+                    rows="3"
+                    placeholder="Birthday party, accessibility needs, etc."
+                  ></textarea>
+                </div>
+              </form>
+            </div>
+          </div>
+
+          <!-- Booking Summary Sidebar -->
+          <div class="booking-summary">
+            <div class="summary-card">
+              <h3>Booking Summary</h3>
+              <div class="summary-content">
+                <div class="summary-item">
+                  <label>Service</label>
+                  <span id="summary-service">Not selected</span>
+                </div>
+                <div class="summary-item">
+                  <label>Date</label>
+                  <span id="summary-date">Not selected</span>
+                </div>
+                <div class="summary-item">
+                  <label>Time</label>
+                  <span id="summary-time">Not selected</span>
+                </div>
+                <div class="summary-item">
+                  <label>Participants</label>
+                  <span id="summary-participants">1 person</span>
+                </div>
+                <div class="summary-total">
+                  <div class="total-row">
+                    <span>Total</span>
+                    <span id="summary-total">$0</span>
+                  </div>
+                  <div class="total-breakdown">
+                    <span id="summary-breakdown"></span>
+                  </div>
+                </div>
+              </div>
+              <button
+                class="continue-button"
+                id="continue-button"
+                onclick="proceedToNext()"
+              >
+                Continue to Date
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Success Modal -->
+        <div class="modal" id="success-modal" style="display: none">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h3>Booking Confirmed!</h3>
+            </div>
+            <div class="modal-body">
+              <div class="success-icon">
+                <svg
+                  width="48"
+                  height="48"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                  <polyline points="22,4 12,14.01 9,11.01" />
+                </svg>
+              </div>
+              <p>
+                Thank you! Your pottery session has been booked successfully.
+              </p>
+              <div class="booking-details">
+                <p>
+                  <strong>Booking ID:</strong> <span id="booking-id"></span>
+                </p>
+                <p>
+                  <strong>Confirmation sent to:</strong>
+                  <span id="confirmation-email"></span>
+                </p>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button
+                class="btn btn-primary"
+                onclick="window.location.href='index.html'"
+              >
+                Return Home
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+    <script src="booking.js"></script>
+  </body>
+</html>
